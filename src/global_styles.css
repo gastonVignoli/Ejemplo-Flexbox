@@ -22,7 +22,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 120vh;
 }
 
 .container {
@@ -54,15 +54,22 @@ body {
     /* Esta es la direccion de flex */
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+
+    /* center, space-arount */
+    justify-content: flex-star;
   
     /* Para modificar en el eje opuesto [columnas] y agregar un espacio entre cada item*/
-    align-content: flex-start;
+    align-items: flex-start;
     gap: 1em;
+
+
+    /* Como envolver los items: wrap */
+    flex-wrap: nowrap;
 
 }
 
 .item-3{
+
   /* Esto para que se pueda completar el resto del espacio en el flexbox*/
-  flex: 1
+  /* flex: 1 */
 }
