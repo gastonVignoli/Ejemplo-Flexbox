@@ -30,6 +30,9 @@ body {
   height: 700px;
   margin: 0 auto;
   border: 10px solid var(--clr-dark);
+  display: flex;
+
+
 }
 
 .item {
@@ -44,7 +47,22 @@ body {
   border-radius: 10px;
 }
 
-/* END OF BASE STYLES */
-.container {
-  display: flex;
+/* ---------------------------------------------------------------------------------------------- */
+
+
+.container{
+    /* Esta es la direccion de flex */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  
+    /* Para modificar en el eje opuesto [columnas] y agregar un espacio entre cada item*/
+    align-content: flex-start;
+    gap: 1em;
+
+}
+
+.item-3{
+  /* Esto para que se pueda completar el resto del espacio en el flexbox*/
+  flex: 1
 }
